@@ -22,31 +22,31 @@ table {
 .clearfix {
   clear: both;
 }
-/* link__bar */
-.link__bar {
+/* link-topbar */
+.link-topbar {
   background-color: #f6f6f6;
 }
 
-.link__bar ul {
+.link-topbar ul {
   float: right;
 }
-.link__bar ul li {
+.link-topbar ul li {
   float: left;
   padding-left: 10px;
   padding-right: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.link__bar ul .fb {
+.link-topbar ul .fb {
   border-right: 2px solid #e3e3e3;
   padding-right: 8px;
 }
-.link__bar .fb span {
+.link-topbar .fb span {
   color: #49609b;
 }
 /* header menu */
 
-.header__menu .logo {
+.header-menu .logo {
   display: block;
   float: left;
   text-indent: 101%;
@@ -55,22 +55,22 @@ table {
   background-image: url('./img/logo.png');
 }
 
-.header__menu ul {
+.header-menu ul {
   float: right;
   font-size: 0px;
 }
-.header__menu ul li {
+.header-menu ul li {
   float: left;
   font-size: 0px;
   line-height: 0px;
 }
-.header__menu ul li a {
+.header-menu ul li a {
   color: #5bc89c;
   line-height: 50px;
   font-size: 16px;
   padding: 17px 20px 12px 20px;
 }
-.header__menu ul li a:hover {
+.header-menu ul li a:hover {
   border-bottom: 3px solid #5bc89c;
 }
 /* 廣告 */
@@ -95,21 +95,24 @@ table {
 /* 技能樹 */
 .skills {
   margin-bottom: 50px;
+  padding: 0 10px 0;
 }
 .skills .skill {
   text-align: center;
   float: left;
   width: 258px;
   height: 302px;
-  margin-left: 20px;
   padding: 20px;
-
+  display: block;
   box-shadow: 0 0 5px #f2f2f2;
   transition-property: transform, box-shadow;
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
 
-  /* border:1px solid #000 ; */
+  /* border: 1px solid #000; */
+}
+.skills .skill + .skill {
+  margin-left: 20px;
 }
 .skills .skill:hover {
   transform: translateY(-10px);
@@ -180,7 +183,7 @@ table {
 .form h2 {
   text-align: center;
 }
-.form .form__input {
+.form .form-column {
   float: left;
   width: 410px;
   padding: 20px;
@@ -195,23 +198,29 @@ table {
   padding: 5px;
   border: none;
 }
-.form .form__group > input,
-.form .form__group > textarea {
+.form .form-group > input,
+.form .form-group > textarea {
   width: 100%;
   box-sizing: border-box;
 }
-.form .form__input > .form__group {
+.form .form-column > .form-group {
   margin-bottom: 20px;
 }
-.form .form__input .btn__submit {
+.form .form-column .btn-submit {
   color: #ffffff;
   padding-left: 20px;
   padding-right: 20px;
   font-size: 16px;
   background-color: #5bc89c;
   float: right;
+  transition: 0.5s;
 }
-#content {
+.form .form-column .btn-submit:hover {
+  background-color: #1bffa4;
+  transform: translateY(-5%);
+  cursor: pointer;
+}
+.form .form-column textarea {
   height: 242px;
 }
 
@@ -220,10 +229,10 @@ table {
 .footer {
   padding: 20px;
 }
-.footer .footer__logo {
+.footer .footer-logo {
   float: left;
 }
-.footer .footer__contact {
+.footer .footer-contact {
   float: right;
 }
 .footer a {
