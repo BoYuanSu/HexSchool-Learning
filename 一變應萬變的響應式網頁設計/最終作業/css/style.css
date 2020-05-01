@@ -27,6 +27,10 @@ input {
   border-radius: 3px;
   color: #ffffff;
 }
+.btn:hover {
+  cursor: pointer;
+  transform: translateY(-5%);
+}
 
 .btn-primary {
   background-color: #f56c23;
@@ -61,7 +65,7 @@ input {
   padding: 16px 0;
 }
 .header-logo a {
-  background-image: url('../img/@svg.svg');
+  background-image: url('../img/logo_w@svg.svg');
   text-indent: 101%;
   white-space: nowrap;
   overflow: hidden;
@@ -81,8 +85,12 @@ input {
 .menu a {
   display: inline-block;
   color: #fff;
-  line-height: 56px;
-  margin-left: 31px;
+  padding: 20px 15px;
+}
+.menu li:hover a {
+  color: #00cc99;
+  padding-bottom: 17px;
+  border-bottom: 3px solid #00cc99;
 }
 
 @media screen and (max-width: 320px) {
@@ -273,7 +281,7 @@ input {
   width: 50%;
 }
 .chef-pic {
-  background-image: url('../img/main_chef_brown.png');
+  background-image: url('../img/logo_l@svg.svg_chef_brown.png');
   background-position: center;
   height: 460px;
   vertical-align: bottom;
@@ -810,11 +818,29 @@ input {
 .form-register .form-group {
   margin-bottom: 15px;
 }
-.form-register .form-group input:nth-child(3) {
-  margin-top: 12px;
+.form-register .form-group input[name='userpassword'] {
+  margin-bottom: 12px;
 }
-.form-register input {
+.input-group-prefix input {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  font-size: 12px;
   width: 100%;
+}
+.input-group-prefix {
+  position: relative;
+}
+.input-group-prefix i {
+  color: rgba(61, 17, 0, 0.5);
+  font-size: 14px;
+  position: absolute;
+  top: 12px;
+  left: 10px;
+}
+.input-group-prefix .fa-lock {
+  font-size: 14px;
+  left: 12px;
 }
 .form-register .form-btn-group {
   justify-content: flex-end;
@@ -871,7 +897,7 @@ input {
   display: block;
 }
 .social .google {
-  background-image: url('../img/');
+  background-image: url('../img');
 }
 .about h2,
 .contact h2 {
