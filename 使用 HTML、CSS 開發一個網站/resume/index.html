@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        line-height: 1;
+      }
+      .clearfix {
+        clear: both;
+      }
+      .title {
+        margin-bottom: 48px;
+        font-size: 32px;
+        text-align: center;
+      }
+      body {
+        background-color: #fafafa;
+      }
+      .wrap {
+        max-width: 1024px;
+        width: 100%;
+        margin: 0 auto;
+      }
+      .profile {
+        background-image: url('./img/img-headerShape.png');
+        height: 399px;
+        padding-top: 125px;
+        padding-left: 135px;
+        box-sizing: border-box;
+        margin-bottom: 130px;
+      }
+      .personal-info {
+        width: 151px;
+        text-align: center;
+        float: left;
+        margin-right: 136px;
+      }
+      .personal-info img {
+        vertical-align: bottom;
+        margin-bottom: 11px;
+      }
+      .personal-info h1 {
+        font-size: 56px;
+        margin-bottom: 9px;
+      }
+      .personal-info h2 {
+        font-size: 19px;
+      }
+      .personal-info h2 + h2 {
+        margin-top: 8px;
+      }
+      .contact {
+        float: left;
+      }
+      .contact a{
+        text-decoration: none;
+        color: #fff;
+      }
+      .contact li {
+        display: block;
+        color: #fff;
+        font-size: 24px;
+        margin-bottom: 12px;
+        height: 42px;
+        line-height: 42px;
+      }
+      .contact img {
+        vertical-align: middle;
+        margin-right: 12px;
+        /* height: 42px; */
+      }
+      .skills {
+        text-align: center;
+        padding: 0 69px;
+        margin-bottom: 56px;
+      }
+
+      .skills h2,
+      .exp h2 {
+        color: #1736dc;
+      }
+      .skill {
+        float: left;
+        width: 282px;
+        padding-top: 25px;
+        padding-bottom: 6px;
+        border-top: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        border-left: 1px solid #ccc;
+        background-color: #fff;
+        border-radius: 6px;
+      }
+      .skill + .skill {
+        margin-left: 17px;
+      }
+      .skill:nth-child(2) {
+        border-bottom: 6px solid #f58d23;
+      }
+      .skill:nth-child(3) {
+        border-bottom: 6px solid #539e43;
+      }
+      .skill:nth-child(4) {
+        border-bottom: 6px solid #6762a6;
+      }
+      .skill img {
+        height: 129px;
+        object-fit: none;
+      }
+      .skill h3 {
+        margin-bottom: 26px;
+      }
+      .skill ul {
+        width: 220px;
+        margin: auto;
+        font-size: 10px;
+        margin-bottom: 35px;
+      }
+      .skill li {
+        text-align: left;
+        line-height: 14px;
+      }
+      .exp {
+        margin-bottom: 56px;
+      }
+      .exp h2 {
+        text-align: center;
+      }
+      .start {
+        height: 85px;
+        width: 511px;
+        border-right: 2px solid #d8d8d8;
+        position: relative;
+      }
+      .start img {
+        position: absolute;
+        right: -17px;
+      }
+      .job {
+        position: relative;
+        width: 510px;
+        height: 153px;
+      }
+      .job:nth-child(odd) {
+        margin-right: 1px;
+        margin-left: auto;
+        text-align: left;
+        border-left: 2px solid #d8d8d8;
+      }
+      .job:nth-child(even) {
+        margin-right: auto;
+        margin-left: 1px;
+        border-right: 2px solid #d8d8d8;
+        text-align: right;
+      }
+      .job img {
+        position: absolute;
+      }
+      .job:nth-child(odd) img {
+        left: -13px;
+      }
+      .job:nth-child(even) img {
+        right: -13px;
+      }
+      .job .job-detail {
+        position: absolute;
+        top: 0;
+        width: 260px;
+        border: 1px solid #fb56bf;
+        border-radius: 10px;
+        font-size: 12px;
+        padding: 12px;
+      }
+      .job:nth-child(odd) .job-detail {
+        left: 25px;
+        text-align: left;
+      }
+      .job:nth-child(even) .job-detail {
+        right: 25px;
+        text-align: right;
+      }
+      .job-detail .time {
+        color: #4a4a4a;
+        font-size: 16px;
+        line-height: 16px;
+
+        margin-bottom: 10px;
+      }
+      .job-detail .job-title {
+        font-size: 16px;
+        line-height: 16px;
+
+        color: #8a1737;
+        margin-bottom: 12px;
+      }
+      .job-detail .company {
+        font-size: 16px;
+        line-height: 16px;
+
+        color: #4a4a4a;
+        margin-bottom: 10px;
+      }
+      .job-detail .desc {
+        font-size: 10px;
+        line-height: 16px;
+        color: #9b9b9b;
+        line-height: 18px;
+      }
+      .end {
+        height: 46px;
+        width: 511px;
+        border-right: 2px solid #d8d8d8;
+        position: relative;
+      }
+      .end::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: -23px;
+        width: 46px;
+        height: 4px;
+        background-color: #d8d8d8;
+        border-radius: 2px;
+      }
+      .works {
+        padding: 0 70px;
+        margin-bottom: 98.4px;
+      }
+      .works h2,
+      .about h2 {
+        color: #fb56bf;
+      }
+      .work {
+        float: left;
+        width: 284px;
+        background-color: #fff;
+        border-radius: 4px;
+        overflow: hidden;
+      }
+      .work:hover{
+        box-shadow: 0px 1px 4px #000;
+      }
+      .work + .work {
+        margin-left: 16px;
+      }
+      .work .pic {
+        height: 150px;
+        line-height: 150px;
+        padding-top: 35px;
+      }
+      .work:nth-child(2) .pic {
+        background-color: #f3b8e1;
+      }
+      .work:nth-child(3) .pic {
+        background-color: #424242;
+      }
+      .work:nth-child(4) .pic {
+        background-color: #8ad7fa;
+      }
+      .work .pic img {
+        margin: 0 auto 0 auto;
+        display: block;
+        object-fit: none;
+      }
+      .work .txt {
+        padding: 9px 8px;
+        font-size: 14px;
+        line-height: 19px;
+      }
+      .work .txt h3 {
+        margin-bottom: 7px;
+      }
+      .work .txt p {
+        color: #4a4a4a;
+      }
+      .about {
+        padding: 0 103px 74px 175px;
+      }
+      .about .self {
+        float: left;
+        margin-right: 44px;
+        width: 260px;
+      }
+      .about .self img {
+        width: 260px;
+      }
+      .about .bio {
+        width: 442px;
+        float: right;
+        padding-top: 27px;
+      }
+      .about .bio p {
+        font-size: 14px;
+        line-height: 26px;
+      }
+      .about .bio p + p {
+        margin-top: 27px;
+      }
+      .footer{
+        background-image: url('img/img-Looper-bg.png');
+        height: 53px;
+        text-align: center;
+        padding-top: 34px;
+      }
+      .footer p{
+        font-size: 16px;
+        line-height: 21px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="profile">
+        <div class="personal-info">
+          <img src="./img/img-c-portrait-1804963_1920.png" alt="" class="avatar" />
+          <h1>BYSu</h1>
+          <h2>BYSu</h2>
+          <h2>Web Developer</h2>
+        </div>
+        <ul class="contact">
+          <li><img src="./img/Icon-location.png" alt="" />Taipei/Taiwan</li>
+          <li><img src="./img/Icon-mail.png" alt="" /><a href="mailto:mayday15221@gmail.com">mayday15221@gmail.com</a></li>
+          <li><img src="./img/icon-github.png" alt="" /><a href="https://github.com/BoYuanSu">https://github.com/BoYuanSu</a></li>
+        </ul>
+      </div>
+      <div class="skills">
+        <h2 class="title">Morden Web Skills</h2>
+        <div class="skill">
+          <img src="./img/img-skill-icon-1.png" alt="" />
+          <h3>Web Layout</h3>
+          <ul>
+            <li>• RWD + Sass</li>
+            <li>• Boostrap 3</li>
+            <li>• FB pixel、schema.org</li>
+            <li>• 大型電子商務版型規劃經驗 (2 years）</li>
+          </ul>
+        </div>
+        <div class="skill">
+          <img src="./img/img-skill-icon-2.png" alt="" />
+          <h3>JavaScript & Node.js</h3>
+          <ul>
+            <li>• jQuery animation</li>
+            <li>• AJAX/JSON</li>
+            <li>• Vue.js (1 years)</li>
+            <li>• Node.js / express</li>
+          </ul>
+        </div>
+        <div class="skill">
+          <img src="./img/img-skill-icon-3.png" alt="" />
+          <h3>Dev Helper</h3>
+          <ul>
+            <li>• jQuery animation</li>
+            <li>• AJAX/JSON</li>
+            <li>• Vue.js (1 years)</li>
+            <li>• Node.js / express</li>
+          </ul>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="exp">
+        <h2 class="title">Experience</h2>
+        <div class="start">
+          <img src="./img/dot-start.png" alt="" />
+        </div>
+        <div class="job">
+          <img src="./img/dot-timeItem.png" alt="" />
+          <div class="job-detail">
+            <h3 class="time">2016/01 - Present</h3>
+            <h3 class="job-title">Web Developer 資深工程師</h3>
+            <h3 class="company">六角超有創意有限公司</h3>
+            <p class="desc">Implemented a system for creating campaign landing pages from the CMS.</p>
+          </div>
+        </div>
+        <div class="job">
+          <img src="./img/dot-timeItem.png" alt="" />
+          <div class="job-detail">
+            <h3 class="time">2015/03 - 2015/06</h3>
+            <h3 class="job-title">Web Developer軟體工程師</h3>
+            <h3 class="company">甜點資訊開發股份有限公司</h3>
+            <p class="desc">Implemented a system for creating campaign landing pages from the CMS.</p>
+          </div>
+        </div>
+        <div class="job">
+          <img src="./img/dot-timeItem.png" alt="" />
+          <div class="job-detail">
+            <h3 class="time">2010/01 - 2015/3</h3>
+            <h3 class="job-title">Web Developer 網頁工程師</h3>
+            <h3 class="company">前端無極限有限公司</h3>
+            <p class="desc">Implemented a system for creating campaign landing pages from the CMS.</p>
+          </div>
+        </div>
+        <div class="end">
+          <img src="./img/" alt="" />
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="works">
+        <h2 class="title">Works 作品</h2>
+        <div class="work">
+          <div class="pic">
+            <img src="./img/logo-work-1.png" alt="" />
+          </div>
+          <div class="txt">
+            <h3>Works 2 titles</h3>
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+        <div class="work">
+          <div class="pic">
+            <img src="./img/logo-work-2.png" alt="" />
+          </div>
+          <div class="txt">
+            <h3>Works 2 titles</h3>
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+        <div class="work">
+          <div class="pic">
+            <img src="./img/logo-work-3.png" alt="" />
+          </div>
+          <div class="txt">
+            <h3>Works 3 titles</h3>
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="about">
+        <h2 class="title">About 梅介其</h2>
+        <div class="self">
+          <img src="./img/20200426_125043.png" alt="" />
+        </div>
+        <div class="bio">
+          <p>
+            具有八年的網頁開發以及介面設計經驗，在 Github 上參與數個開源專案，熟悉原生 JavaScript EM6 開發，以及 VueJS, reactJS 等前端框架。
+            盡為受。幾業本造意當子二，方火動李方然他。住小科登務如卻。後洋一如線達告子喜港友變目不族風西排書終小學：年辦行中夫輪中詩的國、組上會隨可冷灣的進和有是不信使成因給？
+          </p>
+          <p>
+            作而上不選現該時業、公準間在持我天本見連國問轉技雜和據果股會們病觀利學……子照自充則生好國夠用原行增發狀難樓新起為對時我生比：使色最交傳，的設學，作夠門友調管更張奇了覺有結畫會單公！
+          </p>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="footer">
+        <p>
+          &copy; 2020 梅介其. ALL RIGHTS RESERVED
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

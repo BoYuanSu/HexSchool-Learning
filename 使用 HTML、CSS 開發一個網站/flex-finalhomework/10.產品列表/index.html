@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .container {
+        display: flex;
+        max-width: 948px;
+        width: 100%;
+        margin: auto;
+        padding: 5px;
+      }
+      .menu .menu__title {
+        display: flex;
+        padding: 25px 60px;
+        color: #ffffff;
+        background-color: #455b47;
+      }
+      .menu {
+        /* width: 300px; */
+        font-weight: bold;
+      }
+      .menu__list li {
+        padding: 25px 45px;
+        border: 1px solid #f5f7f6;
+      }
+      .menu__list ul {
+        display: block;
+      }
+      .menu__list a {
+        font-size: 26px;
+        color: #455b47;
+        text-decoration: none;
+      }
+      .main {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .item-group {
+        margin-left: 20px;
+        margin-bottom: 20px;
+        width: 300px;
+      }
+      .item-group form {
+        display: flex;
+        flex-direction: column;
+      }
+      .item-group img {
+        vertical-align: bottom;
+      }
+      .form-group label {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        color: #455b47;
+      }
+      .form-group span {
+        border: 1px solid #f5f7f6;
+      }
+      .form-group .name {
+        width: 200px;
+        padding: 20px 30px;
+      }
+      .form-group .price {
+        width: 100px;
+        padding: 20px 15px;
+      }
+      .add-cart {
+        padding: 20px 50px;
+        font-size: 24px;
+        color: #455b47;
+      }
+      input {
+        border: none;
+        background-color: #e1ece7;
+        cursor: pointer;
+      }
+      input:focus {
+        border: none;
+        outline-style: none;
+      }
+      input:hover {
+        background-color: #455b47;
+        color: #fff;
+      }
+      input[type='text'] {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="menu">
+        <div class="menu__title">
+          <h2>甜點類別</h2>
+        </div>
+        <div class="menu__list">
+          <ul>
+            <li><a href="#">所有甜點 (45)</a></li>
+            <li><a href="#">本日精選 (10)</a></li>
+            <li><a href="#">人氣精選 (26)</a></li>
+            <li><a href="#">新品上市 (12)</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="main">
+        <div class="item-group">
+          <img src="./pic1.png" alt="" />
+          <form action="">
+            <div class="form-group">
+              <label for="action"><span class="name">焦糖甜甜圈</span> <span class="price">NT$ 450</span></label>
+              <input type="text" name="name" id="" value="焦糖甜甜圈" />
+            </div>
+
+            <input class="add-cart" type="submit" name="action" id="action" value="加入購物車" />
+          </form>
+        </div>
+        <div class="item-group">
+          <img src="./pic2.png" alt="" />
+          <form action="">
+            <div class="form-group">
+              <label for="action"><span class="name">草莓蛋糕</span> <span class="price">NT$ 450</span></label>
+              <input type="text" name="name" id="" value="草莓蛋糕" />
+            </div>
+
+            <input class="add-cart" type="submit" name="action" id="action" value="加入購物車" />
+          </form>
+        </div>
+        <div class="item-group">
+          <img src="./pic3.png" alt="" />
+          <form action="">
+            <div class="form-group">
+              <label for="action"><span class="name">藍莓優落乳</span><span class="price">NT$ 450</span></label>
+              <input type="text" name="name" id="" value="藍莓優落乳" />
+            </div>
+
+            <input class="add-cart" type="submit" name="action" id="action" value="加入購物車" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

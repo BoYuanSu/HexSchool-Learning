@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+      }
+      li {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+      }
+      .wrap {
+        width: 960px;
+        margin: auto;
+      }
+      .header {
+        background-color: #f5f4f6;
+        margin-bottom: 5px;
+      }
+      .link {
+        float: right;
+      }
+
+      .link li {
+        float: left;
+        margin: 5px;
+      }
+      .link img {
+        margin-right: 5px;
+        font-size: 0px;
+      }
+      .link img,
+      .link span {
+        float: left;
+        /* line-height: 1; */
+        vertical-align: tex-bottom;
+      }
+      .fb {
+        padding-right: 8px;
+        border-right: 2px solid #cccccc;
+      }
+      .clearfix {
+        clear: both;
+      }
+
+      .menu {
+        background-color: aliceblue;
+      }
+      .menu .logo {
+        float: left;
+        background: url('https://upload.cc/i1/2020/04/10/EAxbh9.png') no-repeat;
+        text-indent: 101%;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+      .menu__list {
+        float: right;
+        line-height: 35px;
+      }
+      .menu__list li {
+        float: left;
+      }
+      .menu .menu__list a {
+        color: #5bc99d;
+        display: block;
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+      .menu .menu__list a:hover {
+        border-bottom: 3px solid #5bc99d;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="header">
+        <ul class="link">
+          <li class="fb">
+            <a href="javascirpt:;">
+              <img src="http://icons.iconarchive.com/icons/uiconstock/socialmedia/16/Facebook-icon.png" alt="fb" />
+              <span>粉絲團</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascirpt:;">
+              <img src="https://philogb.github.io/assets/img/twitter.png" alt="contact" />
+              <span>聯絡我們</span>
+            </a>
+          </li>
+        </ul>
+        <div class="clearfix"></div>
+      </div>
+      <div class="menu">
+        <div class="logo">
+          <a href="javascirpt:;" title="logo"><img src="https://upload.cc/i1/2020/04/10/EAxbh9.png" alt="logo" />logo</a>
+        </div>
+        <div class="menu__list">
+          <ul>
+            <li><a href="javascript:;">首頁</a></li>
+            <li><a href="javascript:;">產品介紹</a></li>
+            <li><a href="javascript:;">聯絡我們</a></li>
+          </ul>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </body>
+</html>

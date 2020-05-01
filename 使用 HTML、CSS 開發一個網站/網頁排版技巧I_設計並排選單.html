@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+      }
+      li {
+        list-style: none;
+      }
+      a{
+          text-decoration: none;
+      }
+      .wrap {
+        width: 960px;
+        background-color: antiquewhite;
+        margin: auto;
+        padding: 30px;
+      }
+      .header {
+        /* height: 100px; */
+        background-color: greenyellow;
+        padding: 10px;
+      }
+      .header__menu{
+          float: right;
+          margin-top: 30px;
+          margin-right: 30px;
+      }
+      .header__menu > li{
+          float: left;
+          line-height: 50px;
+          margin-left: 20px;
+      }
+      .logo-img{
+          height: 100px;
+      }
+      .topmenu {
+        background-color: cadetblue;
+        height: 50px;
+      }
+      .topmenu  li  a{
+          display: block;
+          line-height: 50px;
+          text-align: center;
+          width: 180px;
+      }
+      .topmenu li {
+        float: left;
+      }
+      .main .menu,
+      .main .content {
+        float: left;
+      }
+      .menu {
+        width: 200px;
+        /* height: 500px; */
+        /* margin-right: 30px; */
+        background-color: aqua;
+      }
+      .content {
+        width: 700px;
+        background-color: coral;
+        /* height: 500px; */
+      }
+      .clearfix {
+        clear: both;
+      }
+      .header,
+      .main,
+      .topmenu {
+        margin-bottom: 20px;
+      }
+      .footer {
+        background-color: deepskyblue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <div class="header">
+          <a href="javascript:;"><img class="logo-img" src="https://picsum.photos/200" alt=""></a>
+      <ul class="header__menu">
+          <li><a href="javascript:;">關於我們</a></li>
+          <li><a href="javascript:;">產品介紹</a></li>
+          <li><a href="javascript:;">常見問題</a></li>
+      </ul>
+      </div>
+      <div class="topmenu">
+        <ul>
+          <li><a href="javascript:;">首頁</a></li>
+          <li><a href="javascript:;">財經</a></li>
+          <li><a href="javascript:;">政治</a></li>
+          <li><a href="javascript:;">運動</a></li>
+          <li><a href="javascript:;">社會</a></li>
+        </ul>
+      </div>
+      <div class="main">
+        <div class="menu">
+          <ul>
+            <li>item1</li>
+            <li>item2</li>
+            <li>item3</li>
+          </ul>
+        </div>
+        <div class="content">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos natus ipsa pariatur iure rerum neque porro dolore quaerat ex, deserunt ab, asperiores reiciendis ipsam nemo aliquid a magnam amet. Doloremque!
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="footer">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate reprehenderit enim laudantium, soluta a quae deleniti possimus odit totam sapiente voluptatibus accusantium sunt provident illo eligendi, quos veritatis assumenda dolorum!
+      </div>
+    </div>
+  </body>
+</html>

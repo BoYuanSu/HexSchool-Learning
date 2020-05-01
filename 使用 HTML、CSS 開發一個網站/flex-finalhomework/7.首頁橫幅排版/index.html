@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+      }
+      .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 500px;
+        background-color: #ebf0ed;
+      }
+      .header h2 {
+        color: #455b47;
+      }
+      .header img{
+          vertical-align: bottom;
+      }
+
+      .footer {
+        padding: 20px 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .footer .logo a {
+          display: block;
+      }
+      .footer .logo img{
+          vertical-align: bottom;
+      }
+      .footer ul {
+        display: flex;
+      }
+      .footer a {
+        display: block;
+        color: #000;
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div>
+          <img src="./headerLogo.png" alt="" />
+        </div>
+        <h2>今天是個吃甜點的好日子</h2>
+      </div>
+      <div class="footer">
+        <div class="logo">
+          <h1>
+            <a href="#"><img src="./footerLogo.png" alt=""/></a>
+          </h1>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="#">回首頁</a></li>
+            <li><a href="#">關於我們</a></li>
+            <li><a href="#">產品介紹</a></li>
+            <li><a href="#">聯絡我們</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

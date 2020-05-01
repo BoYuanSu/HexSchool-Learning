@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .container {
+        width: 100%;
+        max-width: 300px;
+        margin: auto;
+        padding: 5px;
+      }
+      .container > div {
+        border: 1px solid #ebf0ed;
+      }
+      .abstract li {
+        display: flex;
+        justify-content: space-between;
+        color: #91a192;
+      }
+      .total {
+        font-size: 20px;
+        padding-top: 20px;
+        font-weight: bold;
+      }
+      .item-group {
+        display: flex;
+      }
+      .item-group .text {
+        height: auto;
+        display: flex;
+        padding: 10px 15px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        color: #91a192;
+      }
+      .item-group .product-price {
+        font-size: 18px;
+        font-weight: bold;
+      }
+      .title {
+        background-color: #ebf0ed;
+        padding: 20px 100px;
+        color: #91a192;
+      }
+      .detail {
+        padding: 10px;
+      }
+      .cart {
+        margin-top: 15px;
+      }
+      .item-group + .item-group {
+        margin-top: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="abstract">
+        <div class="title"><h2>訂單摘要</h2></div>
+        <div class="detail">
+          <ul>
+            <li>
+              <p class="name">小計</p>
+              <p class="price">NT$ 2,700</p>
+            </li>
+            <li>
+              <p class="name">運費</p>
+              <p class="price">NT$ 300</p>
+            </li>
+            <li>
+              <p class="name total">總計</p>
+              <p class="price total">NT$ 3,000</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cart">
+        <div class="title"><h2>購物清單</h2></div>
+        <div class="detail">
+          <div class="item-group">
+            <img src="./pic.png" alt="" />
+            <div class="text">
+              <div class="product-name">
+                <h3>焦糖馬卡龍 (2)</h3>
+              </div>
+              <div class="product-price">
+                <p class="price">
+                  NT$ 900
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="item-group">
+            <img src="./pic.png" alt="" />
+            <div class="text">
+              <div class="product-name">
+                <h3>焦糖馬卡龍 (2)</h3>
+              </div>
+              <div class="product-price">
+                <p class="price">
+                  NT$ 900
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="item-group">
+            <img src="./pic.png" alt="" />
+            <div class="text">
+              <div class="product-name">
+                <h3>焦糖馬卡龍 (2)</h3>
+              </div>
+              <div class="product-price">
+                <p class="price">
+                  NT$ 900
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

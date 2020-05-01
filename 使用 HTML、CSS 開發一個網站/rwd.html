@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      ul {
+        /* display: flex; */
+      }
+      li {
+        list-style: none;
+        width: 280px;
+        text-align: center;
+        display: inline-block;
+      }
+      .box {
+        width: 300px;
+        height: 200px;
+        margin: auto;
+        background-color: #f2f2f2;
+        padding: 20px;
+        margin-top: 10px;
+        border: 1px solid red;
+        /* box-sizing: border-box; */
+      }
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+      }
+      .wrap {
+        font-size: 0px;
+        width: 960px;
+        margin: auto;
+        background: #f2f2f2;
+      }
+      .wrap > * {
+        font-size: 16px;
+      }
+      .header {
+        height: 200px;
+        background-color: #000;
+        padding: 30px;
+      }
+      .header img {
+        height: 100%;
+        float: left;
+        margin-right: 50px;
+      }
+      .header p {
+        color: #fff;
+      }
+      .content {
+        height: 600px;
+        background: orange;
+        padding: 30px;
+      }
+      .content > p {
+        margin-bottom: 10px;
+      }
+
+      .content button {
+        padding: 10px;
+        font-size: 26px;
+        background-color: blue;
+        color: #f2f2f2;
+        width: 200px;
+      }
+
+      .content button:hover {
+        background-color: #000;
+      }
+      footer {
+        height: 100px;
+        background-color: antiquewhite;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="banner"></div>
+    <p class="hex">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis distinctio cumque quos similique eum dolor quo mollitia nobis vero hic, quisquam, corporis totam ad sapiente placeat aspernatur error quaerat consectetur!</p>
+
+    <ul>
+      <li>item1</li>
+      <li>item2</li>
+      <li>item3</li>
+    </ul>
+    <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis est iusto earum itaque modi expedita, corporis debitis enim sunt illum, aperiam id harum nulla explicabo consequatur inventore eveniet voluptas. Debitis.</div>
+
+    <div class="wrap">
+      <div class="header">
+        <img src="https://picsum.photos/200" alt="" />
+        <p>我的網站</p>
+      </div>
+      <div class="content">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, ex. Sequi dicta, nisi aperiam, veritatis quod molestias placeat soluta nihil animi, necessitatibus accusantium quam similique tenetur ab laudantium provident aliquid?</p>
+        <button>檔案下載</button>
+      </div>
+      <footer></footer>
+      <p>地址</p>
+    </div>
+    <style>
+      .boxxx {
+        height: 50px;
+
+        float: left;
+      }
+      .boxx1 {
+        width: 500px;
+        background-color: #000;
+      }
+      .boxx2 {
+        width: 680px;
+        background-color: pink;
+      }
+      .clearfix {
+        clear: both;
+      }
+      .wrap2 {
+        background-color: aquamarine;
+        margin: auto;
+        max-width: 1200px;
+        padding: 10px;
+      }
+    </style>
+    <div class="wrap2">
+      <div class="boxxx boxx1"></div>
+      <div class="boxxx boxx2"></div>
+      <div class="clearfix"></div>
+    </div>
+  </body>
+</html>

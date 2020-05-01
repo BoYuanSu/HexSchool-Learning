@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      body{
+        border:20px solid #455b47;
+      }
+      a {
+        text-decoration: none;
+      }
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        background-color: #ebf0ed;
+      }
+      .header .logo {
+        display: flex;
+        align-items: center;
+      }
+      .header .logo a {
+        margin-left: 30px;
+        display: block;
+      }
+      .header .logo img {
+        vertical-align: bottom;
+      }
+      .header .button {
+        display: flex;
+        align-items: center;
+      }
+      .header .button a {
+        display: block;
+        color: #455b47;
+        padding: 30px 0px;
+        margin: 0 30px;
+      }
+
+      .main {
+        display: flex;
+        padding: 30px 50px;
+      }
+      .text {
+        margin-left: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .text h2 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      .share-link-group a{
+        color: #455b47;
+        margin-right: 5px;
+        text-decoration: underline;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="logo">
+          <h1>
+            <a href="#">
+              <img src="./logo.png" alt="" />
+            </a>
+          </h1>
+        </div>
+        <div class="button">
+          <a href="#">more</a>
+        </div>
+      </div>
+
+      <div class="main">
+        <img src="./pic.png" alt="" />
+        <div class="text">
+          <div class="text-group">
+            <h2>
+              想吃甜點是不需要理由的。
+            </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur provident ipsum adipisci rem voluptate quas facere, expedita tempora nulla mollitia quod delectus, enim assumenda voluptatem minima, molestias exercitationem accusantium sunt!</p>
+          </div>
+
+          <div class="share-link-group">
+            <a href="#">FB 分享</a>
+            <a href="#">IG 分享</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

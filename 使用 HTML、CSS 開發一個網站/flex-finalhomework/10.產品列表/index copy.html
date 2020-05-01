@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .container {
+        display: flex;
+        max-width: 948px;
+        width: 100%;
+        margin: auto;
+        padding: 5px;
+      }
+      .menu .menu__title {
+        padding: 25px 60px;
+        color: #ffffff;
+        background-color: #455b47;
+      }
+      .menu {
+        min-width: 300px;
+        text-align: center;
+        font-weight: bold;
+      }
+      .menu__list li {
+        border: 1px solid #f5f7f6;
+      }
+      .menu__list ul {
+        display: block;
+      }
+      .menu__list a {
+        display: block;
+        padding: 25px 45px;
+        font-size: 26px;
+        color: #455b47;
+        text-decoration: none;
+      }
+      .menu__list li.active,
+      .menu__list a:hover {
+        background-color: #ebf0ed;
+      }
+      .main {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .item-group {
+        margin-left: 20px;
+        margin-bottom: 20px;
+        width: 300px;
+      }
+      .item-group form {
+        display: flex;
+        flex-direction: column;
+      }
+      .item-group img {
+        vertical-align: bottom;
+      }
+      .form-group label {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        color: #455b47;
+      }
+      .form-group span {
+        border: 1px solid #f5f7f6;
+      }
+      .form-group .name {
+        width: 200px;
+        padding: 20px 30px;
+      }
+      .form-group .price {
+        width: 100px;
+        padding: 20px 15px;
+      }
+      .add-cart {
+        padding: 20px 50px;
+        font-size: 24px;
+        color: #455b47;
+      }
+      input {
+        border: none;
+        background-color: #e1ece7;
+        cursor: pointer;
+      }
+      input:focus {
+        border: none;
+        outline-style: none;
+      }
+      input:hover {
+        background-color: #455b47;
+        color: #fff;
+      }
+      input[type='text'] {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="menu">
+        <h2 class="menu__title">甜點類別</h2>
+        <ul class="menu__list">
+          <li class="active"><a href="#">所有甜點 (45)</a></li>
+          <li><a href="#">本日精選 (10)</a></li>
+          <li><a href="#">人氣精選 (26)</a></li>
+          <li><a href="#">新品上市 (12)</a></li>
+        </ul>
+      </div>
+      <div class="main">
+        <div class="item-group">
+          <img src="https://hexschool.github.io/flexImgUrl/10/pic1.png" alt="" />
+          <form action="">
+            <div class="form-group">
+              <label for="product1"><span class="name">焦糖甜甜圈</span> <span class="price">NT$ 450</span></label>
+              <input type="text" name="name" id="product1" value="焦糖甜甜圈" />
+            </div>
+
+            <input class="add-cart" type="submit" name="action" value="加入購物車" />
+          </form>
+        </div>
+        <div class="item-group">
+          <img src="https://hexschool.github.io/flexImgUrl/10/pic2.png" alt="" />
+          <form action="">
+            <div class="form-group">
+              <label for="product2"><span class="name">草莓蛋糕</span> <span class="price">NT$ 450</span></label>
+              <input type="text" name="name" id="product2" value="草莓蛋糕" />
+            </div>
+
+            <input class="add-cart" type="submit" name="action" value="加入購物車" />
+          </form>
+        </div>
+        <div class="item-group">
+          <img src="https://hexschool.github.io/flexImgUrl/10/pic3.png" alt="" />
+          <form action="">
+            <div class="form-group">
+              <label for="product3"><span class="name">藍莓優落乳</span><span class="price">NT$ 450</span></label>
+              <input type="text" name="name" id="product3" value="藍莓優落乳" />
+            </div>
+
+            <input class="add-cart" type="submit" name="action" value="加入購物車" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .container {
+        display: flex;
+        padding: 10px;
+        width: 100%;
+        max-width: 1038px;
+        margin: auto;
+      }
+      .container > div {
+        width: 50%;
+        border-radius: 10px;
+        background-color: #EBF0ED;
+      }
+      .container > div + div {
+        margin-left: 20px;
+      }
+      .logo {
+          padding: 150px 0;
+          display: flex;
+          justify-content: center;
+      }
+      .text-content {
+        padding: 100px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <img src="./logo.png" alt="" />
+      </div>
+      <div class="text-content">
+        <h2>為什麼選擇了做甜點？</h2>
+        <p>青山依舊在，幾度夕陽紅。<br>
+        慣看秋月春風，一壺濁酒喜相逢，<br>
+        浪花淘盡英雄，是非成敗轉頭空，<br>
+        滾滾長江東逝水，白髮漁樵江渚上，<br>
+        古今多少是，都付笑談中。
+        <p>
+            是非成敗轉頭空，青山依舊在，幾度夕陽紅。<br>
+            白髮漁樵江渚上，古今多少是，都付笑談中。
+        </p>
+        <p>
+            想吃甜點  是不需要理由的。
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

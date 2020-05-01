@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+        background-color: #ebf0ed;
+        padding: 10px 0;
+      }
+      .header .logo {
+        margin-left: 40px;
+        display: flex;
+      }
+      .header ul {
+        display: flex;
+        align-items: center;
+      }
+      .header ul a {
+        padding: 20px 0px;
+        margin: 0 15px;
+        color: #455b47;
+        text-decoration: none;
+      }
+      .main{
+          width:600px;
+          height: calc(100vh - 136px);
+          display: flex;
+          justify-content: space-evenly;
+          flex-direction: column;
+          margin: auto;
+      }
+      .footer {
+          background-color: #455B47;
+          height: 55px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+      .footer ul {
+          display: flex;
+      }
+      .footer a{
+          color: #fff;
+          text-decoration: none;
+          padding: 20px 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="header">
+        <h1>
+          <a href="#" class="logo">
+            <img src="./logo.png" alt="" />
+          </a>
+        </h1>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Product</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="main">
+        <h2>水文旦知高</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis, iste? Fugit et accusamus nobis, repellat animi molestiae laudantium laboriosam illum distinctio quisquam dolore praesentium quis voluptatibus porro beatae natus aliquid.</p>
+        <img src="./pic.png" alt="" />
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sit rerum id pariatur, necessitatibus repellat odit aliquam labore dolorum non exercitationem esse voluptatum, provident harum vitae placeat nostrum est. Eum!</p>
+      </div>
+
+      <div class="footer">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Product</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

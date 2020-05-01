@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+      }
+      li {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+      }
+
+      .wrap {
+        width: 960px;
+        height: 800px;
+        margin: auto;
+        background-color: #70f1ae;
+        padding-top: 275px;
+      }
+      .main {
+        width: 400px;
+        /* height: 250px; */
+        margin: auto;
+        background-color: #faebd7;
+        border-radius: 20px;
+        box-sizing: border-box;
+        padding: 20px;
+        /* position: relative; */
+        box-shadow: 0px 0px 9px;
+        overflow: hidden;
+      }
+      .main .job {
+        font-size: 20px;
+        padding-left: 8px;
+        font-weight: bold;
+      }
+
+      .main .name {
+        text-align: center;
+        line-height: 80px;
+      }
+      .main .detail {
+        padding-left: 8px;
+      }
+
+      .bg {
+        writing-mode: vertical-lr;
+        float: left;
+        margin-left: 100px;
+        font-size: 50px;
+        word-break: keep-all;
+      }
+      .triangle {
+        width: 0;
+        height: 0;
+        border-width: 0 50px 87px;
+        border-style: solid;
+        border-color: transparent transparent #095;
+        float: left;
+      }
+      .bg_hex{
+        float: left ;
+      }
+      /* 六角形 */
+      .hex1 {
+        left: 270px;
+        top: -280px;
+      }
+      .hex2 {
+        left: 270px;
+        top: -280px;
+      }
+      .hex3 {
+        left: 270px;
+        top: -280px;
+      }
+
+      .hex {
+        position: relative;
+        width: 200px;
+        height: 0;
+        border-width: 0px 50px 87px;
+        border-style: solid;
+        border-color: transparent transparent #f80;
+      }
+      .hex:before {
+        position: absolute;
+        content: '';
+        top: 87px;
+        left: -50px;
+        width: 100px;
+        height: 0;
+        background: none;
+        border-width: 87px 50px 0;
+        border-style: solid;
+        border-color: #f80 transparent transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="bg">
+        <p>HEX SCHOOL</p>
+        <p>網頁名片練習</p>
+      </div>
+      <div class="main">
+        <img src="https://upload.cc/i1/2019/08/02/KJH1tO.png" alt="" class="logo" />
+        <h1 class="job">前端工程師</h1>
+        <h2 class="name">Bo Yuan Su</h2>
+        <div class="detail">
+          <p>0999-999-999</p>
+          <p>by@gmail.com</p>
+          <p>台北市松山區民生東路四段</p>
+        </div>
+        <!-- <div class="triangle"></div> -->
+        <div class="bg_hex">
+          <div class="hex hex1"></div>
+          <div class="hex hex2"></div>
+          <div class="hex hex3"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
